@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+
+<div id="container">
+    <div id="topofpage">
+        <img src="{{ url_for('static', filename='profilepic.jpg') }}" alt="Profile Picture">
+        <h1 class="full-name">Ashleigh McLean</h1>
+        <p class="username">@ashmclean55</p>
+        <p class="location">Kingston, Jamaica</p>
+        <p class="joined">Joined: {{date}}</p>
+    </div>
+
+    <div id="bottomofpage">
+        <p class="bio">A tech-savvy storyteller with a passion for cybersecurity, public relations, and content creation. I thrive on solving problems, building connections, and creating engaging digital experiences!</p>
+        <div class="profile-stats">
+            <div class="stats">
+                <p class="number">4</p>
+                <p class="stat">Posts</p>
+            </div>
+            <div class="stats">
+                <p class="number">25</p>
+                <p class="stat">Following</p>
+            </div>
+            <div class="stats">
+                <p class="number">100</p>
+                <p class="stat">Followers</p>
+            </div>
+        </div>
+        <button class="follow-btn">Follow</button>
+    </div>
+</div>
+
+{% endblock %}
