@@ -2,15 +2,14 @@
 
 {% block main %}
 
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Lobster&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
 
 <div id="container">
     <div id="topofpage">
         <img src="{{ url_for('static', filename='profilepic.jpg') }}" alt="Profile Picture">
         <h1 class="full-name">Ashleigh McLean</h1>
-        <p class="username">@ashmclean55</p>
-        <p class="location">Kingston, Jamaica</p>
-        <p class="joined">Joined: {{date}}</p>
+        <p class="username">@ashmclean55<br> Kingston, Jamaica<br>Joined: {{date}}</p>
     </div>
 
     <div id="bottomofpage">
